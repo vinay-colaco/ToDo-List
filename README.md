@@ -5,6 +5,7 @@ Clone the project
 
 ```bash
     git clone https://github.com/vinay-colaco/ToDo-List.git
+    OR
     git clone git@github.com:vinay-colaco/ToDo-List.git
 ```
 
