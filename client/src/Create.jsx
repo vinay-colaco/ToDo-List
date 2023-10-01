@@ -4,7 +4,7 @@ import axios from 'axios';
 function Create() {
   const [task,setTask] = useState()
   function handleAdd(){
-    axios.post('http://localhost:5000/add',{task:task}).then((result)=>console.log(result)).catch((err)=> console.log(err));
+    axios.post('http://localhost:5000/add',{task:task}).then((result)=>location.reload()).catch((err)=> console.log(err));
   }
   return (
     <div className="create_form">

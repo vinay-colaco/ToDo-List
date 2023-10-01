@@ -31,6 +31,16 @@ app.post('/add',(req,res)=>{
 
 })
 
+app.put('/update/:id',(req,res)=>{
+    const {id} = req.params;
+    ToDoModel.updateOne({_id : id},{$set : { done : true}}).then((result)=>{
+        res.json(result)
+    }).catch((err)=>{
+        res.json(err);
+    })
+})
+
+app.delete('/delete')
 app.listen(5000,()=>{
-    console.log("Server is Running");
+    console.log("Server is Running http://localhost:5000");
 })

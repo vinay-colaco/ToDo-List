@@ -41,6 +41,8 @@
 .task div .icon{
     cursor:pointer
 }
-
+.line_through{
+    text-decoration: line-through;
+}
   
   
