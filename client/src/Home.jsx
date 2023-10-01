@@ -26,7 +26,7 @@ function Home() {
 
   const handleDelete = (id)=>{
     axios.delete('http://localhost:5000/delete/'+id).then((result)=>{
-      console.log(result)
+      location.reload()
     }).catch((err)=>{
       console.log(err);
     })
@@ -48,7 +48,7 @@ function Home() {
               : <BsCircleFill className='icon'/>} {todo.task}</p>
           </div>
           <div>
-            <span><BsFillTrashFill className='icon' onClick={()=> handleDelete(_id)}/></span>
+            <span><BsFillTrashFill className='icon' onClick={()=> handleDelete(todo._id)}/></span>
           </div>
           </div>
 

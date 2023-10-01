@@ -40,7 +40,14 @@ app.put('/update/:id',(req,res)=>{
     })
 })
 
-app.delete('/delete')
+app.delete('/delete/:id',(req,res)=>{
+    const {id} = req.params;
+    ToDoModel.deleteOne({_id:id}).then((result)=>{
+        res.json(result)
+    }).catch((err)=>{
+        res.json(err)
+    })
+})
 app.listen(5000,()=>{
     console.log("Server is Running http://localhost:5000");
 })
