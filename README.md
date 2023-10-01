@@ -1,5 +1,5 @@
 # To Do List
-This is a beginner level MERN stack based To Do List application which allows you to add tasks, strike them when completed and also to delete task.
+This is a beginner level MERN stack based To Do List application which allows you to add tasks, strike them when completed and delete them when not needed.
 
 ## Run Locally
 
