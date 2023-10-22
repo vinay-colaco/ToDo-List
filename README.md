@@ -17,7 +17,7 @@ Go to the project directory
 cd ToDo-List
 ```
 
-Install dependencies
+Install dependencies & make sure to run mongod server or run to monogdb as service
 
 ```bash
 cd client
